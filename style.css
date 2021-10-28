@@ -1,0 +1,273 @@
+/*  ******POLICE ET GENERALITE ********** */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Andada+Pro:ital@0;1&family=Oswald:wght@200;300&display=swap');
+*{
+    text-align: center;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Andada Pro', serif;
+    padding: 0;
+    margin: 0;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*  ******NAV BAR ********** */
+nav {
+    overflow: hidden;
+    background-color: #e6cfd1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9; /* transparence de la nav bar */
+    z-index: 5;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    padding: 18px 16px;
+}
+#logo {
+    font-family:'Abril Fatface', 'cursive';
+    font-weight: bold;
+    float: left;
+}
+/*************** IMAGE PRINCIPALE *********/
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(field.jpg) no-repeat fixed 50% 50%; /*no repeat ne repete pas l'img, fixed pour qu'elle reste fixé tout en scrollant et 50% 50% pour voir l'img centrée */
+    background-size: cover; /* pour afficher l'img aussi grande que possible, et conservant ses proportions*/
+    height: 799px;
+}
+/*#imageSecondaire {
+    padding-top: 60px;
+    margin-top: -50px;
+    height: 790px;
+    background-size: cover;
+    background: rgba(202, 191, 191, 0.3);
+
+}*/
+h1{
+    font-family:'Abril Fatface', 'cursive';
+    color: rgb(119, 14, 14);
+    font-size: 5em;
+    margin-top: 50px;
+    text-shadow: 1px 3px 2px black;
+}
+#premierTrait {
+    height: 1px;
+    width: 10%;
+    margin: -3px auto;
+    background-color: rgb(119, 14, 14) ;
+    box-shadow: 1px 1px 2px black;
+}
+h3 {
+    color: rgb(119, 14, 14);
+    font-size: 3em;
+    text-shadow: 1px 1px 2px black;
+}
+/********* PRESENTATION **********/
+#presentation {
+    background-color: #e6cfd1;
+    padding: 10px 0px 100px 0;
+}
+#textIntro {
+    padding: 0px 20%;
+}
+.bg_insta img {
+width: 40%;
+opacity: 0.8;
+}
+.bg_insta {
+    background: url('fleurs.png') no-repeat 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    width: 400px;
+    height: 461.44px;
+}
+.bg_insta a {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.bg_insta p{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+#prestation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+#prestation p {
+    text-align: center;
+    font-size: 13px;
+    text-shadow: 1px 1px 5px black;
+    color: antiquewhite;
+}
+#prestation h4{
+    font-family: 'Abril Fatface', 'cursive';
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+iframe {
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.img_team img {
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    width: 400px;
+}
+.img_team:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+.img_insta:hover{
+    opacity: 0.7;
+    transform: scale(1.05);   
+    transition: 0.6s ease-in-out;
+}
+.img_insta {
+    transition: 0.6s ease-in-out;
+}
+.img_team {
+    transition: 0.6s ease-in-out;
+}
+/**********  SALON DE THE *************/
+#salon {
+    background-color: #f8e8e8;
+    padding: 1px 2%;
+}
+#salon h2 {
+    padding-top: 60px;
+}
+.table{
+    background: url(salon_de_the.jpg) no-repeat 40% 80%;
+    margin: 65px 100px 0 100px;
+    height: 350px;
+    width: 54%;
+    min-width: 500px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    
+}
+.the{
+    background: url(the_1.jpg) no-repeat 60% 45% ;
+    margin: 65px 100px 0 100px;
+    height: 350px;
+    width: 54%;
+    min-width: 500px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.patisseries{
+    background: url(Cookie_1.jpg) no-repeat 50% 60%;
+    margin: 65px 100px 0 100px;
+    height: 350px;
+    width: 54%;
+    min-width: 500px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+#contenant_salon {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#salon p{
+    padding: 30px;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    width: 20%;
+    font-weight: bold;
+    color: #fff ;
+    border: 1px transparent;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(218, 185, 185);
+}
+/****************** FOOTER *********************/
+footer {
+    background-color: rgb(146, 111, 117);
+    padding: 20px 0 10px 0 ;
+} 
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Andada Pro', serif;
+    border-radius: 8px;
+}
+textarea {
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #f8e8e8;
+}
+button:hover {
+    background-color:rgb(230, 82, 107) ;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait {
+    height: 1px;
+    width: 70%;
+    background-color: antiquewhite;
+    margin: 60px auto;
+}
+#copyright_et_icons{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: antiquewhite;
+}
+#icons {
+    width: 50%;
+    text-align: right;
+}
+#icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.3em;
+    color: antiquewhite;
+    transition: 0.1s ;
+}
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s ;
+}
